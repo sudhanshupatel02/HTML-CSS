@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: rgb(190, 121, 31);
+
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(15, 35, 214);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(18, 214, 60);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (min-width:800px) {
+            body {
+                background-color: rgb(214, 40, 20);
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .bdr {
+            border: 2px solid rgb(30, 233, 11);
+            background-color: hotpink;
+            padding: 10px 23px;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>Aboout</span>
+            <span>Serices</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Loren css in hindi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos soluta dolorem hic veniam quis ipsam harum
+                praesentium reiciendis saepe mollitia sapiente qui nulla minima fugiat odit recusandae est sint ratione,
+                libero, laborum vitae nobis blanditiis! A ea architecto aspernatur ullam debitis sit nisi libero
+                reiciendis hic aliquam officiis, laudantium sunt unde placeat atque! Qui officia molestias cupiditate
+                quae dolorem quasi assumenda perferendis minus dolore, beatae doloremque obcaecati! Voluptatibus,
+                exercitationem aut repellendus provident, nisi rerum officia, numquam maiores similique delectus quidem
+                cumque laborum. Optio, quasi. Sunt incidunt dolorem repellendus possimus eligendi sed officia recusandae
+                aut nihil, eveniet autem fuga alias magni doloribus, soluta repellat odio quas quidem consequatur! Eum
+                est atque totam officia temporibus eaque ipsum hic perspiciatis! Mollitia, recusandae labore!</p>
+        </section>
+        <aside class="bdr">
+            <h1>More About us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">copyright sudhanshu patel</footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_shadow_and_text_shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 8px;
+            background-color: sandybrown;
+            /* box-shadow: offset-x offset-y colar; */
+            /* box-shadow: offset-x offset-y blur-redius colar; */
+            /* box-shadow: offset-x offset-y blur-redius spread-radius colar; */
+
+            /* box-shadow: 10px 13px rgb(9, 167, 43); */
+            /* box-shadow: -10px -11px rgb(9, 167, 43); */
+            /* box-shadow: 7px 5px 10px rgb(9, 167, 43); */
+            /* box-shadow: -7px -5px 10px rgb(9, 167, 43); */
+            /* box-shadow: -7px -5px 10px 34px rgb(9, 167, 43); */
+            /* box-shadow: -7px -5px 10px 34px rgb(9, 167, 43 ,0.5); */
+            /* box-shadow: inset 3px 5px blue; */
+
+            box-shadow: inset 3px 5px rgb(91, 216, 67), 4px 6px rgb(223, 64, 151);
+        }
+
+
+        .card h2 {
+            /* text-shadow: 1px 3px chartreuse; */
+            /* text-shadow: 1px 3px 2px chartreuse; */
+            /* text-shadow: -1px -3px chartreuse; */
+            text-shadow: -1px -3px 2px chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is c++ Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit sunt ea doloribus earum
+                quisquam vitae alias laboriosam illo dolorum necessitatibus ad, perferendis eum a magnam sapiente,
+                quidem at nisi. Ea labore libero facilis?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit sunt ea doloribus earum
+                quisquam vitae alias laboriosam illo dolorum necessitatibus ad, perferendis eum a magnam sapiente,
+                quidem at nisi. Ea labore libero facilis?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit sunt ea doloribus earum
+                quisquam vitae alias laboriosam illo dolorum necessitatibus ad, perferendis eum a magnam sapiente,
+                quidem at nisi. Ea labore libero facilis?</p>
+        </div>
+    </div>
+</body>
+
+</html>
